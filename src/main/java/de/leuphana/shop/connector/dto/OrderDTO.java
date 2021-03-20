@@ -1,19 +1,24 @@
 package de.leuphana.shop.connector.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDTO {
 
-    private Integer orderId;
+    private Integer id;
     private List<OrderPositionDTO> orderPositions;
     private Integer customerId;
 
-    public Integer getOrderId() {
-        return orderId;
+    public OrderDTO() {
+        this.orderPositions = new ArrayList<>();
     }
 
-    public void setOrderId(Integer orderId) {
-        this.orderId = orderId;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public List<OrderPositionDTO> getOrderPositions() {

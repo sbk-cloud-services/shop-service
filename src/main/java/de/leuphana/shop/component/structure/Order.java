@@ -1,19 +1,24 @@
 package de.leuphana.shop.component.structure;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
 
-    private Integer orderId;
+    private Integer id;
     private List<OrderPosition> orderPositions;
     private Customer customer;
 
-    public Integer getOrderId() {
-        return orderId;
+    public Order() {
+        this.orderPositions = new ArrayList<>();
     }
 
-    public void setOrderId(Integer orderId) {
-        this.orderId = orderId;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public List<OrderPosition> getOrderPositions() {

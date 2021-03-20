@@ -156,7 +156,7 @@ public class ShopRestRequesterTest {
     @Test
     @org.junit.jupiter.api.Order(12)
     public void canOrderBeFetched() {
-        Assertions.assertNotNull(shopRestRequester.getOrder(orderDTO.getOrderId()));
+        Assertions.assertNotNull(shopRestRequester.getOrder(orderDTO.getId()));
     }
 
     @Test
