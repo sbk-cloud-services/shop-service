@@ -6,7 +6,7 @@ public class Order {
 
     private Integer orderId;
     private List<OrderPosition> orderPositions;
-    private Integer customerId;
+    private Customer customer;
 
     public Integer getOrderId() {
         return orderId;
@@ -24,12 +24,12 @@ public class Order {
         this.orderPositions = orderPositions;
     }
 
-    public Integer getCustomerId() {
-        return customerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerId(Integer customerId) {
-        this.customerId = customerId;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
 }

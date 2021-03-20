@@ -4,9 +4,10 @@ import java.util.List;
 
 import de.leuphana.shop.component.structure.Article;
 import de.leuphana.shop.component.structure.Cart;
+import de.leuphana.shop.component.structure.Customer;
 import de.leuphana.shop.component.structure.Order;
 
-public class ShopImplementation implements SupplierServiceInvoker, CustomerServiceInvoker {
+public class ShopServiceImplementation implements SupplierServiceInvoker, CustomerServiceInvoker {
 
     @Override
     public List<Article> searchArticles(String searchQuery) {
@@ -35,13 +36,11 @@ public class ShopImplementation implements SupplierServiceInvoker, CustomerServi
     @Override
     public void addArticleToCart(Integer cartId, Integer articleId) {
         // TODO Auto-generated method stub
-        
     }
 
     @Override
     public void checkoutCart(Integer cartId) {
         // TODO Auto-generated method stub
-        
     }
 
     @Override
@@ -65,7 +64,6 @@ public class ShopImplementation implements SupplierServiceInvoker, CustomerServi
     @Override
     public void deleteArticle(Integer articleId) {
         // TODO Auto-generated method stub
-        
     }
 
     @Override
@@ -77,7 +75,12 @@ public class ShopImplementation implements SupplierServiceInvoker, CustomerServi
     @Override
     public void authenticate(String email, String password) {
         // TODO Auto-generated method stub
-        
     }
 
-} 
+    @Override
+    public Customer getCustomer(Integer customerId) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+}

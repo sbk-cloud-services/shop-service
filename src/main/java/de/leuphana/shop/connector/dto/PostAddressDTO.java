@@ -1,6 +1,6 @@
-package de.leuphana.shop.component.structure;
+package de.leuphana.shop.connector.dto;
 
-public class PostAddress {
+public class PostAddressDTO {
     private String street;
     private String housenumber;
     private String zipcode;

@@ -1,10 +1,10 @@
-package de.leuphana.shop.component.structure;
+package de.leuphana.shop.connector.dto;
 
-public class CartItem {
+public class CartItemDTO {
 
     private Integer id;
     private Integer quantity;
-    private Article article;
+    private Integer articleId;
 
     public Integer getId() {
         return id;
@@ -22,12 +22,12 @@ public class CartItem {
         this.quantity = quantity;
     }
 
-    public Article getArticleId() {
-        return article;
+    public Integer getArticleId() {
+        return articleId;
     }
 
-    public void setArticle(Article article) {
-        this.article = article;
+    public void setArticleId(Integer articleId) {
+        this.articleId = articleId;
     }
 
 }
