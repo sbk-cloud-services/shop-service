@@ -14,11 +14,13 @@ public interface CustomerServiceInvoker {
 
     public Cart createCart();
 
-    public Cart getCart(Integer cartId);
+    public Cart getCart();
 
-    public void addArticleToCart(Integer cartId, Integer articleId); // TODO: Add quantity
+    public void addArticleToCart(Integer articleId, Integer quantity);
 
-    public void checkoutCart(Integer cartId);
+    public void removeArticleFromCart(Integer articleId);
+
+    public void checkoutCart();
 
     public Customer getCustomer(Integer customerId);
 

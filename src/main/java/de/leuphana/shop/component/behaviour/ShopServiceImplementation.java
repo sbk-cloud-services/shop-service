@@ -28,18 +28,18 @@ public class ShopServiceImplementation implements SupplierServiceInvoker, Custom
     }
 
     @Override
-    public Cart getCart(Integer cartId) {
+    public Cart getCart() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public void addArticleToCart(Integer cartId, Integer articleId) {
+    public void addArticleToCart(Integer articleId, Integer quantity) {
         // TODO Auto-generated method stub
     }
 
     @Override
-    public void checkoutCart(Integer cartId) {
+    public void checkoutCart() {
         // TODO Auto-generated method stub
     }
 
@@ -81,6 +81,12 @@ public class ShopServiceImplementation implements SupplierServiceInvoker, Custom
     public Customer getCustomer(Integer customerId) {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public void removeArticleFromCart(Integer articleId) {
+        // TODO Auto-generated method stub
+
     }
 
 }

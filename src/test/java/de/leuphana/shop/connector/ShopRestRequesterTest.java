@@ -127,7 +127,7 @@ public class ShopRestRequesterTest {
     @org.junit.jupiter.api.Order(8)
     public void canArticleBeAddedToCart() {
         cartItemDTO.setArticleId(articleDTO.getId());
-        Assertions.assertNotNull(shopRestRequester.addArticleToCart(cartItemDTO, cartDTO.getId()));
+        shopRestRequester.addArticleToCart(cartItemDTO, cartDTO.getId());
     }
 
     @Test
@@ -167,12 +167,18 @@ public class ShopRestRequesterTest {
 
     @Test
     @org.junit.jupiter.api.Order(14)
+    public void canArticleBeRemoved() {
+        shopRestRequester.removeArticleFromCart(cartDTO.getId(), articleDTO.getId());
+    }
+
+    @Test
+    @org.junit.jupiter.api.Order(15)
     public void canCartBeDeleted() {
         shopRestRequester.deleteCart(cartDTO.getId());
     }
 
     @Test
-    @org.junit.jupiter.api.Order(15)
+    @org.junit.jupiter.api.Order(16)
     public void canArticleBeDeleted() {
         shopRestRequester.deleteArticle(articleDTO.getId());
     }
