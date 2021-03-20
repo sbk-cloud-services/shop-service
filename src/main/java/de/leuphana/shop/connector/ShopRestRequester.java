@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import de.leuphana.shop.connector.dto.ArticleDTO;
 import de.leuphana.shop.connector.dto.AuthenticationTokenDTO;
 import de.leuphana.shop.connector.dto.CartDTO;
+import de.leuphana.shop.connector.dto.CartItemDTO;
 import de.leuphana.shop.connector.dto.CustomerDTO;
 import de.leuphana.shop.connector.dto.EmailPasswordCredentialsDTO;
 import de.leuphana.shop.connector.dto.OrderDTO;
@@ -39,7 +40,7 @@ public interface ShopRestRequester {
     public CartDTO getCart(@Param("id") Integer id);
 
     @RequestLine("POST /carts/{id}")
-    public CartDTO addArticleToCart(ArticleDTO article, @Param("id") Integer cartId);
+    public CartDTO addArticleToCart(CartItemDTO cartItem, @Param("id") Integer cartId);
 
     @RequestLine("DELETE /carts/{id}")
     public void deleteCart(@Param("id") Integer id);
