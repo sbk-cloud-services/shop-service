@@ -42,7 +42,7 @@ public interface ShopRestRequester {
     @RequestLine("POST /carts/{id}")
     public void addArticleToCart(CartItemDTO cartItem, @Param("id") Integer cartId);
 
-    @RequestLine("POST /carts/{id}/articles/{articleId}")
+    @RequestLine("DELETE /carts/{cartId}/articles/{articleId}")
     public void removeArticleFromCart(@Param("cartId") Integer cartId, @Param("articleId") Integer articleId);
 
     @RequestLine("DELETE /carts/{id}")
