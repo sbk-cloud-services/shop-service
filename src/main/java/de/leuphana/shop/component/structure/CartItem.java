@@ -22,7 +22,7 @@ public class CartItem {
         this.quantity = quantity;
     }
 
-    public Article getArticleId() {
+    public Article getArticle() {
         return article;
     }
 

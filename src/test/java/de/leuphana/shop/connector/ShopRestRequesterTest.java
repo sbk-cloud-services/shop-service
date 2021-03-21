@@ -35,7 +35,7 @@ public class ShopRestRequesterTest {
     static void setupBeforeClass() {
         shopRestRequester = Feign.builder().requestInterceptor(new ShopRestRequesterIntercepter())
                 .encoder(new GsonEncoder()).decoder(new ShopRestDecoder())
-                .target(ShopRestRequester.class, "http://shop.localhost");
+                .target(ShopRestRequester.class, "http://localhost");
 
         // email and password credentials
         emailPasswordCredentialsDTO = new EmailPasswordCredentialsDTO();
@@ -180,6 +180,6 @@ public class ShopRestRequesterTest {
     @Test
     @org.junit.jupiter.api.Order(16)
     public void canArticleBeDeleted() {
-        shopRestRequester.deleteArticle(articleDTO.getId());
+        // shopRestRequester.deleteArticle(articleDTO.getId());
     }
 }

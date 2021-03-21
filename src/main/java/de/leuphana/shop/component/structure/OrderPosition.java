@@ -1,11 +1,17 @@
 package de.leuphana.shop.component.structure;
 
 public class OrderPosition {
+
+    private Integer id;
     private Article article;
     private Integer quantity;
 
-    public Article getArticleId() {
-        return article;
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getQuantity() {
@@ -16,7 +22,11 @@ public class OrderPosition {
         this.quantity = quantity;
     }
 
-    public void setArticleId(Article article) {
+    public Article getArticle() {
+        return article;
+    }
+
+    public void setArticle(Article article) {
         this.article = article;
     }
 }

@@ -20,7 +20,7 @@ public interface CustomerServiceInvoker {
 
     public void removeArticleFromCart(Integer articleId);
 
-    public void checkoutCart();
+    public Order checkoutCart(Customer customer);
 
     public Customer getCustomer(Integer customerId);
 

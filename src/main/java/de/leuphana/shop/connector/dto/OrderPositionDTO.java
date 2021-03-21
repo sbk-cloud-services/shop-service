@@ -17,6 +17,10 @@ public class OrderPositionDTO {
         return articleId;
     }
 
+    public void setArticleId(Integer articleId) {
+        this.articleId = articleId;
+    }
+
     public Integer getQuantity() {
         return quantity;
     }
@@ -25,7 +29,4 @@ public class OrderPositionDTO {
         this.quantity = quantity;
     }
 
-    public void setArticleId(Integer articleId) {
-        this.articleId = articleId;
-    }
 }

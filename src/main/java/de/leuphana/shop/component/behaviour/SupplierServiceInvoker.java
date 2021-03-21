@@ -12,8 +12,6 @@ public interface SupplierServiceInvoker {
 
     public Article editArticle(Integer articleId, String name, Double price);
 
-    public void deleteArticle(Integer articleId);
-
     public Article getArticle(Integer articleId);
 
     public List<Order> getOrders();

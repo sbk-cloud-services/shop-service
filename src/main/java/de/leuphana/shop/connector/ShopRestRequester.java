@@ -30,9 +30,6 @@ public interface ShopRestRequester {
     @RequestLine("POST /articles/{id}")
     public ArticleDTO editArticle(@Param("id") Integer id, ArticleDTO article);
 
-    @RequestLine("DELETE /articles/{id}")
-    public void deleteArticle(@Param("id") Integer id);
-
     @RequestLine("POST /carts")
     public CartDTO createCart();
 
@@ -61,7 +58,7 @@ public interface ShopRestRequester {
     public List<OrderDTO> getOrders();
 
     @RequestLine("GET /orders/{id}")
-    public OrderDTO getOrder(@Param("id") Integer id);
+    public OrderDTO getOrder(@Param("id") Integer orderId);
 
     @RequestLine("POST /authentication/authenticate")
     public AuthenticationTokenDTO authenticateUser(@RequestBody EmailPasswordCredentialsDTO emailPasswordCredentials);
