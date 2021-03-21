@@ -176,10 +176,4 @@ public class ShopRestRequesterTest {
     public void canCartBeDeleted() {
         shopRestRequester.deleteCart(cartDTO.getId());
     }
-
-    @Test
-    @org.junit.jupiter.api.Order(16)
-    public void canArticleBeDeleted() {
-        // shopRestRequester.deleteArticle(articleDTO.getId());
-    }
 }
